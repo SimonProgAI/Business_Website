@@ -1,4 +1,5 @@
-User Stories:
+--USER STORIES--
+
 As a client, I want to see examples of work.
 As a client, I want to know what items are available.
 As a client, I want to know item cost.
@@ -8,12 +9,15 @@ As a client, I want to review items after purchase.
 As a client, I want to make a customized order.
 
 As a client, I want to communicate with the artist after placing an order
-As a client, I want to know what the return policy is.
 As a client, I want to create an account to manage my orders.
 
 As a client, I want to know who the artist is.
 As a client, I want to easily navigate the website.
 As a client, I want to find the artist on social media.
 
-Wireframes & Wireflows:
--
+--WIREFRAMES & WIREFLOW
+Desktop Mode
+ https://drive.google.com/file/d/1CxiC2ayqqUobZ0Y_51Lf82Ec-_xbLE4b/view?usp=sharing
+
+Mobile Mode
+ https://drive.google.com/file/d/1VJeATuKD4YkGXZDHdjzsJ5_dhsDMc-L9/view?usp=sharing
