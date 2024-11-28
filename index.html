@@ -46,8 +46,8 @@
                             <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
                         <ul class="navbar-nav me-auto">
-                            <li><img src="./assets/person.svg" height="45px" width="45px"></li>
-                            <li><img src="./assets/cart.svg" height="45px" width="45px"></li>
+                            <li><img src="./assets/person.svg" height="45" width="45" alt="login icon"></li>
+                            <li><img src="./assets/cart.svg" height="45" width="45" alt="cart icon"></li>
                         </ul>
                     </div>
               </div>
@@ -62,29 +62,72 @@
             <div class="container" id="about">
                 <h1>About the Artist</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quo voluptate repellat maiores iusto laborum 
-                    eveniet expedita? Quaerat perspiciatis nulla quidem porro exercitationem esse sequi modi quam dignissimos! Nemo.
+                   eveniet expedita? Quaerat perspiciatis nulla quidem porro exercitationem esse sequi modi quam dignissimos! Nemo.
                 </p>
                 <p>Veritatis minima tenetur autem, omnis quod assumenda doloribus ad a quaerat eveniet in consequuntur, delectus 
-                aut est animi, illum doloremque alias. Quo in doloremque dolorum?
+                   aut est animi, illum doloremque alias. Quo in doloremque dolorum?
                 </p>
             </div>    
             <div class="container">
                 <div class="row row-cols-lg-2 row-cols-md-1">
+                    <!--AUTO ADJUST HEIGHT IN CSS-->
                     <figure class="col">
-                        <img src="./assets/depositphotos_243600690-stock-illustration-person-gray-photo-placeholder-girl.jpg" >
+                        <img src="./assets/depositphotos_243600690-stock-illustration-person-gray-photo-placeholder-girl.jpg" height="200" width="200" alt="headshot of the artist">
                         <figcaption>Hello!</figcaption>
                     </figure>
                     <figure class="col">
-                        <img src="./assets/233-2332677_image-500580-placeholder-transparent.png">
+                        <img src="./assets/233-2332677_image-500580-placeholder-transparent.png" height="200" width="300" alt="the artist at work in her she-shed">
                         <figcaption>At work in my she-shed!</figcaption>
                     </figure>
                 </div>
             </div>
         </section>
-
+        <!--REDUCE THE WIDTH-->
+        <hr class="hr" />
+        <section class="container-fluid text-center">
+            <div class="container text-center">
+                <h1>Today's Featured Items</h1>
+            </div>
+            <div class="row row-cols">
+                <div class="card col" style="width: 18rem;">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                    <h5 class="card-title">Item A</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">More Info</a>
+                    <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col" style="width: 18rem;">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                    <h5 class="card-title">Item A</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">More Info</a>
+                    <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col" style="width: 18rem;">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                    <h5 class="card-title">Item A</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">More Info</a>
+                    <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>  
+        </section>
     </main>
-    <footer>
-
+    <footer class="container-fluid">
+        <div class="row text-center m-4">
+            <div class="social row-cols">
+                <a href="#"><img class="icon col" src="./assets/envelope-svgrepo-com.svg" alt="Envelope Icon - Contact me" height="45" width="45"/></a>
+                <a href="https://facebook.com"><img class="icon col" src="./assets/2023_Facebook_icon.svg.png" alt="Facebook icon"  height="45" width="45"/></a>
+                <a href="https://instagram.com"><img class="icon col" src="./assets/Instagram_logo_2022.svg" alt="Instagram icon"  height="45" width="45"/></a>
+            </div>
+            <div class="col col-12 col-md-5 mx-auto">&copy; 2024 Simon Lupien</div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
