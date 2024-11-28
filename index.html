@@ -11,9 +11,10 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Andrea Collier</a>
+                <!--HAMBURGER MODE IS TRANSPARENT-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -30,8 +31,9 @@
                             Catalog
                             </a>
                             <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./catalog.html">Featured Items</a></li>
-                            <li><a class="dropdown-item" href="./custom_orders.html">Customized Orders</a></li>
+                            <!--TARGET BLANK DOES NOT WORK-->
+                            <li><a class="dropdown-item" href="./catalog.html" target="_blank">Featured Items</a></li>
+                            <li><a class="dropdown-item" href="./custom_orders.html" target="_blank">Customized Orders</a></li>
                             </ul>
                         </li>
                         <li class="nav-item px-3">
@@ -53,6 +55,32 @@
         </nav>
     </header>
     <main>
+        <section class="container-fluid main-banner">
+            <h1 class="main-banner-title">Homemade Craft</h1>
+        </section>
+        <section class="container text-center">
+            <div class="container" id="about">
+                <h1>About the Artist</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quo voluptate repellat maiores iusto laborum 
+                    eveniet expedita? Quaerat perspiciatis nulla quidem porro exercitationem esse sequi modi quam dignissimos! Nemo.
+                </p>
+                <p>Veritatis minima tenetur autem, omnis quod assumenda doloribus ad a quaerat eveniet in consequuntur, delectus 
+                aut est animi, illum doloremque alias. Quo in doloremque dolorum?
+                </p>
+            </div>    
+            <div class="container">
+                <div class="row row-cols-lg-2 row-cols-md-1">
+                    <figure class="col">
+                        <img src="./assets/depositphotos_243600690-stock-illustration-person-gray-photo-placeholder-girl.jpg" >
+                        <figcaption>Hello!</figcaption>
+                    </figure>
+                    <figure class="col">
+                        <img src="./assets/233-2332677_image-500580-placeholder-transparent.png">
+                        <figcaption>At work in my she-shed!</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer>
