@@ -10,7 +10,97 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    
+    <main>
+        <Section class="container text-center">
+            <h1>Examples of Custom Made Orders</h1>
+            <div id="carouselCustomOrders" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselCustomOrders" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselCustomOrders" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselCustomOrders" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/christmas_ornament.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/coffee_container.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/coffee_mug.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCustomOrders" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCustomOrders" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </Section>
+        <hr class="hr"/>
+        <section class="container">
+            <h1 class="text-center"><a href="#">Login</a> to customize your order.</h1>
+            <form>
+                <select class="form-select" aria-label="Default select example" id="quickSelectMenu">
+                    <option selected>Choose an item</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <div class="container">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size" id="size1">
+                        <label class="form-check-label" for="size1">
+                        Small
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size" id="size2" checked>
+                        <label class="form-check-label" for="size2">
+                        Medium
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size" id="size3" checked>
+                        <label class="form-check-label" for="size3">
+                        Large
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size" id="size4" checked>
+                        <label class="form-check-label" for="size4">
+                        Extra Large
+                        </label>
+                    </div>
+                </div>
+                <div class="container mt-3">
+                    <label for="myColor" class="form-label">Choose a color</label>
+                    <input type="color" class="form-control form-control-color" id="myColor" value="#CCCCCC" title="Choose a color">
+                </div>
+                <input class="form-control" type="text" placeholder="Message to be printed on the item" aria-label="Message to be printed on the item">
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Submit your own design</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+            </form>
+
+        </section>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
     crossorigin="anonymous">
