@@ -3,22 +3,26 @@ Simon Lupien - Website for Andrea Collier, Craft Artist
 --OVERVIEW/DESCRIPTION OF THE PROJECT--
 I made this website for my mother-in-law who is a skilled amateur craft artist. She's been talking about turning her hobby into a small business and I thought that a website might be of some help.
 
+--DETAILS ON HOW TO USE IT/WHAT FUNCIONALITY IS OFFERED--
+The website contains (IN PROGRESS)
+
 --TECHNOLOGIES USED--
 HTML
 CSS
 Bootstrap
 JavaScript (via Bootstrap, but I did not directly used it myself)
+https://draw.io to create the wireframe and wireflow
 
 --RESOURCES USED--
 https://getbootstrap.com/
 https://www.w3schools.com/
-https://draw.io
+
 
 --IDEAS FOR FUTURE IMPROVEMENT--
 1. Implementing a function to automatically display the 3 best rated items in the TODAY'S FEATURED ITEMS section in Index.html.
 2. The Add to Cart button actually pushing items in the shopping cart. 
+(IN PROGRESS)
 
-The website contains 
 
 --USER STORIES--
 As a client, I want to see examples of work.

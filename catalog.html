@@ -8,123 +8,246 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
+    
 </head>
 <body>
     <main>
-        <section class="container-fluid text-center">
+        <section class="container">
             <div class="container text-center">
-                <h1>Today's Featured Items</h1>
+                <h1>Featured Items</h1>
             </div>
-            <div class="row row-cols-auto">
-                <div class="card col" style="width: 18rem;">
-                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                    <div class="card-body">
-                    <h5 class="card-title">Item A</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">More Info</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
+            <!--ITEM PRICE MISSING-->
+            <!--MORE INFO MODAL WINDOW MISSING-->
+            <div class="container my-5">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-popular-tab" 
+                        data-bs-toggle="tab" data-bs-target="#nav-popular" 
+                        type="button" role="tab" aria-controls="nav-popular" 
+                        aria-selected="true">Popular Items</button>
+
+                        <button class="nav-link" id="nav-mugs-tab" 
+                        data-bs-toggle="tab" data-bs-target="#nav-mugs" 
+                        type="button" role="tab" aria-controls="nav-mugs" 
+                        aria-selected="true">Mugs</button>
+
+                        <button class="nav-link" id="nav-wood-tab" 
+                        data-bs-toggle="tab" data-bs-target="#nav-wood" 
+                        type="button" role="tab" aria-controls="nav-wood" 
+                        aria-selected="true">Wood</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-popular">
+                    <div class="tab-pane fade show active p-3" id="nav-popular" role="tabpanel" aria-labelledby="nav-popular-tab">
+                        <div class="row row-cols-auto">
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card col" style="width: 18rem;">
-                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                    <div class="card-body">
-                    <h5 class="card-title">Item A</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">More Info</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
+                <div class="tab-content" id="nav-mugs">
+                    <div class="tab-pane fade show p-3" id="nav-mugs" role="tabpanel" aria-labelledby="nav-mugs-tab">
+                        <div class="row row-cols-auto">
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card col" style="width: 18rem;">
-                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                    <div class="card-body">
-                    <h5 class="card-title">Item A</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">More Info</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
+                <div class="tab-content" id="nav-wood">
+                    <div class="tab-pane fade show p-3" id="nav-wood" role="tabpanel" aria-labelledby="nav-wood-tab">
+                        <div class="row row-cols-auto">
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                                <div class="card-body">
+                                <h5 class="card-title">Item A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-success">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card col" style="width: 18rem;">
-                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                    <div class="card-body">
-                    <h5 class="card-title">Item A</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">More Info</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="card col" style="width: 18rem;">
-                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                    <div class="card-body">
-                    <h5 class="card-title">Item A</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">More Info</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="card col" style="width: 18rem;">
-                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                    <div class="card-body">
-                    <h5 class="card-title">Item A</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">More Info</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="card col" style="width: 18rem;">
-                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                    <div class="card-body">
-                    <h5 class="card-title">Item A</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">More Info</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="card col" style="width: 18rem;">
-                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                    <div class="card-body">
-                    <h5 class="card-title">Item A</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">More Info</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="card col" style="width: 18rem;">
-                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                    <div class="card-body">
-                    <h5 class="card-title">Item A</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">More Info</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="card col" style="width: 18rem;">
-                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                    <div class="card-body">
-                    <h5 class="card-title">Item A</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">More Info</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="card col" style="width: 18rem;">
-                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                    <div class="card-body">
-                    <h5 class="card-title">Item A</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">More Info</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="card col" style="width: 18rem;">
-                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                    <div class="card-body">
-                    <h5 class="card-title">Item A</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">More Info</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
-                    </div>
-                </div>
-            </div>  
+            </div>
+            </div>    
+
+              
         </section>
         <hr class="hr" />
         <section>
@@ -140,5 +263,6 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
     crossorigin="anonymous">
     </script>
+    
 </body>
 </html>
