@@ -12,10 +12,13 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand" href="#">Andrea Collier</a>
                 <!--HAMBURGER MODE IS TRANSPARENT 19:10-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler bg-body-tertiary" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -49,7 +52,7 @@
             </div>
         </nav>
         <!--MODAL-->
-        <div class="modal fade" id="loginform" tabindex="-1" aria-labelledby="loginform" aria-hidden="true">
+        <div class="modal fade" id="loginform" tabindex="-1" aria-labelledby="loginform" aria-hidden="false">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -58,34 +61,34 @@
                     </div>
                     <div class="modal-body">
                         <form>
-                            <div class="container row-cols-auto">
-                                <input type="email" name="loginEmail" id="loginEmail" class="row" placeholder="your@email" required>
-                                <input type="password" name="loginPassword" id="loginPassword" class="row" placeholder="password" required>
+                            <div class="container row-cols">
+                                <input type="email" name="loginEmail" id="loginEmail" class="row container-fluid p-2" placeholder="your@email" required>
+                                <input type="password" name="loginPassword" id="loginPassword" class="row container-fluid p-2" placeholder="password" required>
                                <!--CHECKBOX AND FORGOT PASSWORD SHOULD BE SIDE BY SIDE-->
-                                <div class="form-check row-cols">
-                                    <span class="col">
+                                <div class="form-check row-cols justify-content-center">
+                                    <div class="col container-fluid">
                                         <input class="form-check-input" type="checkbox" value="" id="loginCheckbox" />
                                         <label class="form-check-label" for="loginCheckbox">Remember Me</label>
-                                    </span>
-                                    <span>
-                                        <h6 class="col"><a href="#">Forgot your password?</a></h6>
-                                    </span>
+                                    </div>
+                                    <div class="col container-fluid p-2">
+                                        <h6><a href="#">Forgot your password?</a></h6>
+                                    </div>
                                 </div>
                                 
                             </div>
                         </form>
                     </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="modal-footer justify-content-center">
+                     <button type="button" class="btn btn-secondary container" data-bs-dismiss="modal">Close</button>
+                     <button type="button" class="btn btn-primary container">Login</button>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="container-fluid main-banner">
-            <h1 class="main-banner-title">Homemade Craft</h1>
+        <section class="main-banner">
+            <h1 class="main-banner-title container-fluid">Homemade Craft</h1>
         </section>
         <section class="container text-center">
             <div class="container" id="about">
@@ -111,45 +114,62 @@
                 </div>
             </div>
         </section>
-        <!--REDUCE THE WIDTH-->
         <hr class="hr" />
         <section class="container-fluid text-center">
             <div class="container text-center">
                 <h1>Today's Featured Items</h1>
             </div>
-            <div class="row row-cols">
-                <div class="card col" style="width: 18rem;">
+            <div class="row row-cols justify-content-center">
+                <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
                     <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
                     <div class="card-body">
-                    <h5 class="card-title">Item A</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">More Info</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
+                    <h4 class="card-title">Item A</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                    <h5 class="text-center" id="pricetag">$10</h5>
+                    <a href="#" class="btn btn-success center">Add to Cart</a>
                     </div>
                 </div>
-                <div class="card col" style="width: 18rem;">
+                <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
                     <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
                     <div class="card-body">
-                    <h5 class="card-title">Item A</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">More Info</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
+                    <h4 class="card-title">Item A</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                    <h5 class="text-center" id="pricetag">$10</h5>
+                    <a href="#" class="btn btn-success center">Add to Cart</a>
                     </div>
                 </div>
-                <div class="card col" style="width: 18rem;">
+                <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
                     <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
                     <div class="card-body">
-                    <h5 class="card-title">Item A</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">More Info</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
+                    <h4 class="card-title">Item A</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                    <h5 class="text-center" id="pricetag">$10</h5>
+                    <a href="#" class="btn btn-success center">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                    <h4 class="card-title">Item A</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                    <h5 class="text-center" id="pricetag">$10</h5>
+                    <a href="#" class="btn btn-success center">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                    <h4 class="card-title">Item A</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                    <h5 class="text-center" id="pricetag">$10</h5>
+                    <a href="#" class="btn btn-success center">Add to Cart</a>
                     </div>
                 </div>
             </div>  
         </section>
     </main>
     <!--ADD A BACKGROUND TO THE FOOTER-->
-    <footer class="container-fluid">
+    <footer class="container-fluid bg-body-tertiary">
         <div class="row text-center m-4">
             <div class="social row-cols">
                 <a href="./contact_me.html" target="_blank"><img class="icon col" src="./assets/envelope-svgrepo-com.svg" alt="Envelope Icon - Contact me" height="45" width="45"/></a>

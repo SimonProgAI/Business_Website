@@ -10,7 +10,138 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Andrea Collier</a>
+                <!--HAMBURGER MODE IS TRANSPARENT 19:10-->
+                <button class="navbar-toggler bg-body-tertiary" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto ">
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item dropdown px-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Catalog
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./catalog.html" target="_blank">Featured Items</a></li>
+                            <li><a class="dropdown-item" href="./custom_orders.html" target="_blank">Customized Orders</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="./contact_me.html" target="_blank">Contact Me</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav">
+                        <ul class="navbar-nav me-auto">
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#loginform"><img src="./assets/person.svg" height="45" width="45" alt="login icon"></a></li>
+                            <li><a href="#"><img src="./assets/cart.svg" height="45" width="45" alt="cart icon"></a></li>
+                        </ul>
+                    </div>
+              </div>
+            </div>
+        </nav>
+        <!--MODAL-->
+        <div class="modal fade" id="loginform" tabindex="-1" aria-labelledby="loginform" aria-hidden="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="signInLabel">Sign In</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="container row-cols">
+                                <input type="email" name="loginEmail" id="loginEmail" class="row container-fluid p-2" placeholder="your@email" required>
+                                <input type="password" name="loginPassword" id="loginPassword" class="row container-fluid p-2" placeholder="password" required>
+                               <!--CHECKBOX AND FORGOT PASSWORD SHOULD BE SIDE BY SIDE-->
+                                <div class="form-check row-cols justify-content-center">
+                                    <div class="col container-fluid">
+                                        <input class="form-check-input" type="checkbox" value="" id="loginCheckbox" />
+                                        <label class="form-check-label" for="loginCheckbox">Remember Me</label>
+                                    </div>
+                                    <div class="col container-fluid p-2">
+                                        <h6><a href="#">Forgot your password?</a></h6>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                     <button type="button" class="btn btn-secondary container" data-bs-dismiss="modal">Close</button>
+                     <button type="button" class="btn btn-primary container">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
+        <section class="main-banner">
+            <h1 class="main-banner-title container-fluid">Homemade Craft</h1>
+        </section>
+        <section class="container p-3">
+            <h1 class="text-center p-3"><a href="#" data-bs-toggle="modal" data-bs-target="#loginform">Login</a> to customize your order.</h1>
+            <form class="container-fluid">
+                <select class="form-select" aria-label="Default select example" id="quickSelectMenu">
+                    <option selected>Select an item</option>
+                    <option value="1">mug</option>
+                    <option value="2">plaque</option>
+                    <option value="3">ornament</option>
+                    <option value="4">t-shirt</option>
+                </select>
+                <div class="container p-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size" id="size1">
+                        <label class="form-check-label" for="size1">
+                        Small
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size" id="size2" checked>
+                        <label class="form-check-label" for="size2">
+                        Medium
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size" id="size3" checked>
+                        <label class="form-check-label" for="size3">
+                        Large
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size" id="size4" checked>
+                        <label class="form-check-label" for="size4">
+                        Extra Large
+                        </label>
+                    </div>
+                </div>
+                <div class="p-3 container row row-cols-2">
+                    <input type="color" class="form-control form-control-color" id="myColor" value="#CCCCCC" title="Choose a color">
+                    <label for="myColor" class="form-label">Choose a color</label>
+                </div>
+                <input class="form-control" type="text" placeholder="Message to be printed on the item" aria-label="Message to be printed on the item">
+                <div class="container-fluid p-3">
+                    <label for="formFile" class="form-label">Submit your own design</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <div class="container-fluid text-center p-3">
+                    <button type="submit" class="btn btn-primary">Submit Order</button>
+                </div>
+            </form>
+
+        </section>
+        <hr class="hr"/>
         <Section class="container text-center">
             <h1>Examples of Custom Made Orders</h1>
             <div id="carouselCustomOrders" class="carousel slide">
@@ -52,57 +183,6 @@
                 </button>
             </div>
         </Section>
-        <hr class="hr"/>
-        <section class="container">
-            <h1 class="text-center"><a href="#">Login</a> to customize your order.</h1>
-            <form>
-                <select class="form-select" aria-label="Default select example" id="quickSelectMenu">
-                    <option selected>Choose an item</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <div class="container">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="size" id="size1">
-                        <label class="form-check-label" for="size1">
-                        Small
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="size" id="size2" checked>
-                        <label class="form-check-label" for="size2">
-                        Medium
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="size" id="size3" checked>
-                        <label class="form-check-label" for="size3">
-                        Large
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="size" id="size4" checked>
-                        <label class="form-check-label" for="size4">
-                        Extra Large
-                        </label>
-                    </div>
-                </div>
-                <div class="container mt-3">
-                    <label for="myColor" class="form-label">Choose a color</label>
-                    <input type="color" class="form-control form-control-color" id="myColor" value="#CCCCCC" title="Choose a color">
-                </div>
-                <input class="form-control" type="text" placeholder="Message to be printed on the item" aria-label="Message to be printed on the item">
-                <div class="mb-3">
-                    <label for="formFile" class="form-label">Submit your own design</label>
-                    <input class="form-control" type="file" id="formFile">
-                </div>
-                <div class="container-fluid text-center">
-                    <button type="submit" class="btn btn-primary">Submit Order</button>
-                </div>
-            </form>
-
-        </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
