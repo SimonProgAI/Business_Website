@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrea Collier-Craft Artist Custom Orders</title>
+    <title>Andrea Collier-Custom Orders</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
@@ -12,30 +12,29 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">Andrea Collier</a>
-                <!--HAMBURGER MODE IS TRANSPARENT 19:10-->
-                <button class="navbar-toggler bg-body-tertiary" type="button" data-bs-toggle="collapse" 
-                data-bs-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" 
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Andrea Collier</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#hamburgerMode" 
+                aria-controls="hamburgerMode" 
                 aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-collapse collapse bg-body-tertiary" id="hamburgerMode">
                     <ul class="navbar-nav mx-auto ">
                         <li class="nav-item px-3">
                             <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="./index.html#about">About</a>
                         </li>
                         <li class="nav-item dropdown px-3">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Catalog
                             </a>
                             <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./catalog.html" target="_blank">Featured Items</a></li>
-                            <li><a class="dropdown-item" href="./custom_orders.html" target="_blank">Customized Orders</a></li>
+                                <li><a class="dropdown-item" href="./catalog.html" target="_blank">Featured Items</a></li>
+                                <li><a class="dropdown-item" href="./custom_orders.html" target="_blank">Customized Orders</a></li>
                             </ul>
                         </li>
                         <li class="nav-item px-3">
@@ -56,7 +55,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="signInLabel">Sign In</h1>
+                        <h1 class="modal-title fs-5" id="signInLabel">Login</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -64,7 +63,6 @@
                             <div class="container row-cols">
                                 <input type="email" name="loginEmail" id="loginEmail" class="row container-fluid p-2" placeholder="your@email" required>
                                 <input type="password" name="loginPassword" id="loginPassword" class="row container-fluid p-2" placeholder="password" required>
-                               <!--CHECKBOX AND FORGOT PASSWORD SHOULD BE SIDE BY SIDE-->
                                 <div class="form-check row-cols justify-content-center">
                                     <div class="col container-fluid">
                                         <input class="form-check-input" type="checkbox" value="" id="loginCheckbox" />
@@ -88,62 +86,71 @@
     </header>
     <main>
         <section class="main-banner">
-            <h1 class="main-banner-title container-fluid">Homemade Craft</h1>
+            <h1 class="main-banner-title container-fluid">Custom Orders</h1>
         </section>
         <section class="container p-3">
-            <h1 class="text-center p-3"><a href="#" data-bs-toggle="modal" data-bs-target="#loginform">Login</a> to customize your order.</h1>
+            <h1 class="text-center p-3">
+                <a href="#" data-bs-toggle="modal" 
+                data-bs-target="#loginform">Login</a> to customize your order
+            </h1>
+            <!--CUSTOM ORDER FORM-->
             <form class="container-fluid">
-                <select class="form-select" aria-label="Default select example" id="quickSelectMenu">
-                    <option selected>Select an item</option>
-                    <option value="1">mug</option>
-                    <option value="2">plaque</option>
-                    <option value="3">ornament</option>
-                    <option value="4">t-shirt</option>
+                <!--ITEM SELECTION-->
+                <select class="form-select" aria-label="Select an Item" id="quickSelectMenu">
+                    <option selected aria-label="Select an item">Select an item</option>
+                    <option value="1" aria-label="mug">mug</option>
+                    <option value="2" aria-label="plaque">plaque</option>
+                    <option value="3" aria-label="ornament">ornament</option>
+                    <option value="4" aria-label="t-shirt">t-shirt</option>
                 </select>
+                <!--ITEM SIZE-->
                 <div class="container p-3">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="size" id="size1">
-                        <label class="form-check-label" for="size1">
+                        <label class="form-check-label" for="size1" aria-label="size small">
                         Small
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="size" id="size2" checked>
-                        <label class="form-check-label" for="size2">
+                        <label class="form-check-label" for="size2" aria-label="size medium">
                         Medium
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="size" id="size3" checked>
-                        <label class="form-check-label" for="size3">
+                        <label class="form-check-label" for="size3" aria-label="size large">
                         Large
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="size" id="size4" checked>
-                        <label class="form-check-label" for="size4">
+                        <label class="form-check-label" for="size4" aria-label="size extra large">
                         Extra Large
                         </label>
                     </div>
                 </div>
+                <!--ITEM COLOR-->
                 <div class="p-3 container row row-cols-2">
                     <input type="color" class="form-control form-control-color" id="myColor" value="#CCCCCC" title="Choose a color">
-                    <label for="myColor" class="form-label">Choose a color</label>
+                    <label for="myColor" class="form-label" aria-label="Choose a color">Choose a color</label>
                 </div>
+                <!--SUBMIT FILE-->
                 <input class="form-control" type="text" placeholder="Message to be printed on the item" aria-label="Message to be printed on the item">
                 <div class="container-fluid p-3">
-                    <label for="formFile" class="form-label">Submit your own design</label>
+                    <label for="formFile" class="form-label" aria-label="Submit your own design">Submit your own design</label>
                     <input class="form-control" type="file" id="formFile">
                 </div>
+                <!--SUBMIT ORDER-->
                 <div class="container-fluid text-center p-3">
-                    <button type="submit" class="btn btn-primary">Submit Order</button>
+                    <button type="submit" class="btn btn-primary btn-lg" aria-label="Submit order">Submit Order</button>
                 </div>
             </form>
-
         </section>
         <hr class="hr"/>
+        <!--CAROUSEL-->
         <Section class="container text-center">
-            <h1>Examples of Custom Made Orders</h1>
+            <h1>Custom orders I made over the years</h1>
             <div id="carouselCustomOrders" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselCustomOrders" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -152,38 +159,47 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./assets/christmas_ornament.jpg" class="d-block w-100" alt="...">
+                        <img src="./assets/christmas_ornament.jpg" class="w-75" alt="Christmas ornament">
                         <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                          <h5>Christmas Ormament</h5>
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, deserunt?.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/coffee_container.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <div class="carousel-item">
+                        <img src="./assets/coffee_container.jpg" class="w-75" alt="coffee container">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Coffee Container</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, deserunt?.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/coffee_mug.jpeg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
+                    <div class="carousel-item">
+                        <img src="./assets/coffee_mug.jpeg" class="w-75" alt="coffee mug">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Coffee Mug</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, deserunt?.</p>
+                        </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselCustomOrders" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselCustomOrders" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </Section>
     </main>
+    <footer class="container-fluid p-3">
+        <div class="row text-center m-4">
+            <div class="social row-cols">
+                <a href="./contact_me.html" target="_blank"><img class="icon col" src="./assets/envelope-svgrepo-com.svg" alt="Envelope Icon - Contact me" height="45" width="45"/></a>
+                <a href="https://facebook.com"><img class="icon col" src="./assets/2023_Facebook_icon.svg.png" alt="Facebook icon"  height="45" width="45"/></a>
+                <a href="https://instagram.com"><img class="icon col" src="./assets/Instagram_logo_2022.svg" alt="Instagram icon"  height="45" width="45"/></a>
+            </div>
+            <div class="col mx-auto">&copy; 2024 Simon Lupien</div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
     crossorigin="anonymous">

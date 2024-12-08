@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrea Collier-Craft Artist Homepage</title>
+    <title>Andrea Collier-Homepage</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
@@ -12,16 +12,15 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">Andrea Collier</a>
-                <!--HAMBURGER MODE IS TRANSPARENT 19:10-->
-                <button class="navbar-toggler bg-body-tertiary" type="button" data-bs-toggle="collapse" 
-                data-bs-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" 
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Andrea Collier</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#hamburgerMode" 
+                aria-controls="hamburgerMode" 
                 aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-collapse collapse bg-body-tertiary" id="hamburgerMode">
                     <ul class="navbar-nav mx-auto ">
                         <li class="nav-item px-3">
                             <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
@@ -34,8 +33,8 @@
                             Catalog
                             </a>
                             <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./catalog.html" target="_blank">Featured Items</a></li>
-                            <li><a class="dropdown-item" href="./custom_orders.html" target="_blank">Customized Orders</a></li>
+                                <li><a class="dropdown-item" href="./catalog.html" target="_blank">Featured Items</a></li>
+                                <li><a class="dropdown-item" href="./custom_orders.html" target="_blank">Customized Orders</a></li>
                             </ul>
                         </li>
                         <li class="nav-item px-3">
@@ -56,7 +55,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="signInLabel">Sign In</h1>
+                        <h1 class="modal-title fs-5" id="signInLabel">Login</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -64,7 +63,6 @@
                             <div class="container row-cols">
                                 <input type="email" name="loginEmail" id="loginEmail" class="row container-fluid p-2" placeholder="your@email" required>
                                 <input type="password" name="loginPassword" id="loginPassword" class="row container-fluid p-2" placeholder="password" required>
-                               <!--CHECKBOX AND FORGOT PASSWORD SHOULD BE SIDE BY SIDE-->
                                 <div class="form-check row-cols justify-content-center">
                                     <div class="col container-fluid">
                                         <input class="form-check-input" type="checkbox" value="" id="loginCheckbox" />
@@ -90,19 +88,21 @@
         <section class="main-banner">
             <h1 class="main-banner-title container-fluid">Homemade Craft</h1>
         </section>
-        <section class="container text-center">
-            <div class="container" id="about">
-                <h1>About the Artist</h1>
+        <!--ABOUT & PICTURES OF THE ARTIST-->
+        <section class="container ">
+            <!--ABOUT-->
+            <div class="container text-center" id="about">
+                <h1 class="my-3">About the Artist</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quo voluptate repellat maiores iusto laborum 
                    eveniet expedita? Quaerat perspiciatis nulla quidem porro exercitationem esse sequi modi quam dignissimos! Nemo.
                 </p>
                 <p>Veritatis minima tenetur autem, omnis quod assumenda doloribus ad a quaerat eveniet in consequuntur, delectus 
                    aut est animi, illum doloremque alias. Quo in doloremque dolorum?
                 </p>
-            </div>    
-            <div class="container">
+            </div> 
+            <!--PICTURES OF THE ARTIST-->   
+            <div class="container text-center">
                 <div class="row row-cols-lg-2 row-cols-md-1">
-                    <!--AUTO ADJUST HEIGHT IN CSS-->
                     <figure class="col">
                         <img src="./assets/depositphotos_243600690-stock-illustration-person-gray-photo-placeholder-girl.jpg" height="200" width="200" alt="headshot of the artist">
                         <figcaption>Hello!</figcaption>
@@ -115,61 +115,61 @@
             </div>
         </section>
         <hr class="hr" />
-        <section class="container-fluid text-center">
+        <!--TODAY'S FEATURED ITEMS-->
+        <section class="container-fluid">
             <div class="container text-center">
                 <h1>Today's Featured Items</h1>
             </div>
             <div class="row row-cols justify-content-center">
-                <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
                     <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
                     <div class="card-body">
-                    <h4 class="card-title">Item A</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
-                    <h5 class="text-center" id="pricetag">$10</h5>
-                    <a href="#" class="btn btn-success center">Add to Cart</a>
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
                     </div>
                 </div>
-                <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
                     <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
                     <div class="card-body">
-                    <h4 class="card-title">Item A</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
-                    <h5 class="text-center" id="pricetag">$10</h5>
-                    <a href="#" class="btn btn-success center">Add to Cart</a>
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
                     </div>
                 </div>
-                <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
                     <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
                     <div class="card-body">
-                    <h4 class="card-title">Item A</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
-                    <h5 class="text-center" id="pricetag">$10</h5>
-                    <a href="#" class="btn btn-success center">Add to Cart</a>
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
                     </div>
                 </div>
-                <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
                     <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
                     <div class="card-body">
-                    <h4 class="card-title">Item A</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
-                    <h5 class="text-center" id="pricetag">$10</h5>
-                    <a href="#" class="btn btn-success center">Add to Cart</a>
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
                     </div>
                 </div>
-                <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
                     <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
                     <div class="card-body">
-                    <h4 class="card-title">Item A</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
-                    <h5 class="text-center" id="pricetag">$10</h5>
-                    <a href="#" class="btn btn-success center">Add to Cart</a>
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
                     </div>
                 </div>
             </div>  
         </section>
     </main>
-    <!--ADD A BACKGROUND TO THE FOOTER-->
-    <footer class="container-fluid bg-body-tertiary">
+    <footer class="container-fluid p-3">
         <div class="row text-center m-4">
             <div class="social row-cols">
                 <a href="./contact_me.html" target="_blank"><img class="icon col" src="./assets/envelope-svgrepo-com.svg" alt="Envelope Icon - Contact me" height="45" width="45"/></a>
