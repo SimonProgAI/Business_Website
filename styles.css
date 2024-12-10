@@ -2,46 +2,90 @@
 .navbar{
     height: 5rem;
     text-transform: uppercase;
-    font-size: calc(0.5rem + 0.5vw);
+    font-size: 1rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-
 }
 
+.navbar-collapse {
+    height: 5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
 
-/*MAIN-BANNER*/
+/*BANNER-TEXT*/
 .main-banner {
     height: 600px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.25),
-            rgba(255, 255, 255, 0.25)), url(./assets/Hero-Banner-Placeholder-Light-1024x480-1.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 8px 8px white inset;
+
 }
 
 .main-banner-title {
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 500;
     font-size: calc(4rem + 4vw);
-    letter-spacing: 4px;
+    letter-spacing: 10px;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.99);
+}
+
+/*FORMS*/
+
+form {
+    padding: 3rem;
 }
 
 /*MAIN-ABOUT*/
-
-#about>h1 {
-    text-transform: uppercase;
-    justify-items: center;
-}
 
 #about>p {
     justify-content: flex-start;
     font-size: 2rem;
 }
 
-figure>img {
-    size: 2vw;
+figcaption {
+    height: 5rem;
+    text-transform: uppercase;
+    font-size: calc(0.5rem + 0.5vw);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
+
+h1 {
+    padding: 2rem;
+    text-transform: uppercase;
+    justify-items: center;
+}
+
+/*ARTIST PICTURES*/
+
+.artist_photos {
+    border-radius: 15px;
+}
+
+/*BANNER PICTURES*/
+#homemade_craft_banner {
+    background-image: url(./assets/composition-different-objects-fathers-day.jpg);
+}
+
+#catalog_banner {
+    background-image: url(./assets/tags-with-string-scissors.jpg);
+}
+
+#custom_order_banner {
+    background-image: url(./assets/macrame-arrangement-with-copy-space.jpg);
+}
+
+#contact_me_banner {
+    background-image: url(./assets/technology-empty-coffee-envelope-message.jpg);
+}
+
+/*CAROUSEL ITEMS*/
+.carousel_img {
+    border-radius: 15px;
+}
+
 

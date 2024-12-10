@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles.css">
     
 </head>
-<body>
+<body class="bg-body-tertiary">
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
@@ -86,184 +86,197 @@
         </div>
     </header>
     <main>
-        <section class="main-banner">
+        <!--CATALOG BANNER-->
+        <section class="main-banner" id="catalog_banner">
             <h1 class="main-banner-title container-fluid">Catalog</h1>
         </section>
-        <section class="container">
+        <section class="container-fluid">
             <div class="container text-center">
                 <h1>Featured Items</h1>
             </div>
-            <!--TABS-->
-            <div class="container my-3">
-                <nav class="container">
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button class="nav-link active" id="nav-popular-tab" 
-                        data-bs-toggle="tab" data-bs-target="#nav-popular" 
-                        type="button" role="tab" aria-controls="nav-popular" 
-                        aria-selected="true">Popular Items</button>
-
-                        <button class="nav-link" id="nav-mugs-tab" 
-                        data-bs-toggle="tab" data-bs-target="#nav-mugs" 
-                        type="button" role="tab" aria-controls="nav-mugs" 
-                        aria-selected="false">Mugs</button>
-
-                        <button class="nav-link" id="nav-wood-tab" 
-                        data-bs-toggle="tab" data-bs-target="#nav-wood" 
-                        type="button" role="tab" aria-controls="nav-wood" 
-                        aria-selected="false">Woodwork</button>
-
-                        <button class="nav-link" id="nav-clothing-tab" 
-                        data-bs-toggle="tab" data-bs-target="#nav-clothing" 
-                        type="button" role="tab" aria-controls="nav-clothing" 
-                        aria-selected="false">Clothing</button>
-
-                        <button class="nav-link" id="nav-plaques-tab" 
-                        data-bs-toggle="tab" data-bs-target="#nav-plaques" 
-                        type="button" role="tab" aria-controls="nav-plaques" 
-                        aria-selected="false">Plaques</button>
-
-                        <button class="nav-link" id="nav-ornaments-tab" 
-                        data-bs-toggle="tab" data-bs-target="#nav-ornaments" 
-                        type="button" role="tab" aria-controls="nav-ornaments" 
-                        aria-selected="false">Ornaments</button>
-                    </div>
-                </nav>
-                <div class="tab-content" id="nav-popular">
-                    <div class="tab-pane fade show active p-3" id="nav-popular" role="tabpanel" aria-labelledby="nav-popular-tab">
-                        <div class="row row-cols-auto justify-content-center">
-                            <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
-                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                                <div class="card-body">
-                                <h4 class="card-title">Item A</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
-                                <h5 class="text-center" id="pricetag">$10</h5>
-                                <a href="#" class="btn btn-success center">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
-                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                                <div class="card-body">
-                                <h4 class="card-title">Item A</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
-                                <h5 class="text-center" id="pricetag">$10</h5>
-                                <a href="#" class="btn btn-success center">Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
+            <!--ITEM CARDS CONTAINER-->
+            <div class="row row-cols justify-content-center">
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
                     </div>
                 </div>
-                <div class="tab-content" id="nav-mugs">
-                    <div class="tab-pane fade show p-3" id="nav-mugs" role="tabpanel" aria-labelledby="nav-mugs-tab">
-                        <div class="row row-cols-auto justify-content-center">
-                            <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
-                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                                <div class="card-body">
-                                <h4 class="card-title">Item A</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
-                                <h5 class="text-center" id="pricetag">$10</h5>
-                                <a href="#" class="btn btn-success center">Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
                     </div>
                 </div>
-                <div class="tab-content" id="nav-wood">
-                    <div class="tab-pane fade show p-3" id="nav-wood" role="tabpanel" aria-labelledby="nav-wood-tab">
-                        <div class="row row-cols-auto justify-content-center">
-                            <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
-                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                                <div class="card-body">
-                                <h4 class="card-title">Item A</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
-                                <h5 class="text-center" id="pricetag">$10</h5>
-                                <a href="#" class="btn btn-success center">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
-                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                                <div class="card-body">
-                                <h4 class="card-title">Item A</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
-                                <h5 class="text-center" id="pricetag">$10</h5>
-                                <a href="#" class="btn btn-success center">Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
                     </div>
                 </div>
-                <div class="tab-content" id="nav-clothing">
-                    <div class="tab-pane fade show p-3" id="nav-clothing" role="tabpanel" aria-labelledby="nav-wood-tab">
-                        <div class="row row-cols-auto justify-content-center">
-                            <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
-                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                                <div class="card-body">
-                                <h4 class="card-title">Item A</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
-                                <h5 class="text-center" id="pricetag">$10</h5>
-                                <a href="#" class="btn btn-success center">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
-                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                                <div class="card-body">
-                                <h4 class="card-title">Item A</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
-                                <h5 class="text-center" id="pricetag">$10</h5>
-                                <a href="#" class="btn btn-success center">Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
                     </div>
                 </div>
-                <div class="tab-content" id="nav-plaques">
-                    <div class="tab-pane fade show p-3" id="nav-plaques" role="tabpanel" aria-labelledby="nav-plaques-tab">
-                        <div class="row row-cols-auto justify-content-center">
-                            <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
-                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                                <div class="card-body">
-                                <h4 class="card-title">Item A</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
-                                <h5 class="text-center" id="pricetag">$10</h5>
-                                <a href="#" class="btn btn-success center">Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
                     </div>
                 </div>
-                <div class="tab-content" id="nav-ornaments">
-                    <div class="tab-pane fade show p-3" id="nav-ornaments" role="tabpanel" aria-labelledby="nav-ornaments-tab">
-                        <div class="row row-cols-auto justify-content-center">
-                            <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
-                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                                <div class="card-body">
-                                <h4 class="card-title">Item A</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
-                                <h5 class="text-center" id="pricetag">$10</h5>
-                                <a href="#" class="btn btn-success center">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="card col-auto col-sm-1 m-2" style="width: 18rem">
-                                <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
-                                <div class="card-body">
-                                <h4 class="card-title">Item A</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
-                                <h5 class="text-center" id="pricetag">$10</h5>
-                                <a href="#" class="btn btn-success center">Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
                     </div>
                 </div>
-            </div>   
-        </section>
-        <hr class="hr" />
-        <section>
-            <div class="container text-center">
-                <h1 class="m-2">Looking for something specific?</h1>
-                <div class="p">
-                    <a href="./custom_orders.html" target="_blank" class="btn btn-primary btn-lg m-2">Customize your order!</button></a>
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
+                    </div>
                 </div>
-            </div>
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card col-sm-1 m-2 text-center" style="width: 18rem">
+                    <img src="./assets/Hero-Banner-Placeholder-Light-1024x480-1.png" class="card-img-top" alt="Item A">
+                    <div class="card-body">
+                        <h4 class="card-title">Item A</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quis.</p>
+                        <h5>$10</h5>
+                        <a href="#" class="btn btn-success btn-lg center">Add to Cart</a>
+                    </div>
+                </div>
+            </div>  
         </section>
     </main>
     <footer class="container-fluid p-3">
