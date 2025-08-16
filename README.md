@@ -1,4 +1,4 @@
-## Project 1: Simon Lupien
+## Mock Business Website
 
 ## Overview
 This project is a web-based catalog and contact platform for custom orders, featuring a clean design and easy navigation. It showcases products, allows users to contact the artist, and request custom orders.
