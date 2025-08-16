@@ -1,41 +1,44 @@
-Simon Lupien - Website for Andrea Collier, Craft Artist
+## Project 1: Simon Lupien
 
---OVERVIEW/DESCRIPTION OF THE PROJECT--
-I made this website for my mother-in-law who is a skilled amateur craft artist. She's been talking about turning her hobby into a small business and I thought that a website might be of some help.
+## Overview
+This project is a web-based catalog and contact platform for custom orders, featuring a clean design and easy navigation. It showcases products, allows users to contact the artist, and request custom orders.
 
+## Features
+- Product catalog with images
+- Custom order request form
+- Contact page
+- Responsive design
+- Modern UI with CSS styling
 
---TECHNOLOGIES USED--
-HTML
-CSS
-Bootstrap
-JavaScript (via Bootstrap)
-https://draw.io to create the wireframe and wireflow
+## Installation
+No installation required. Simply open `index.html` in your browser.
 
+## Usage
+1. Open `index.html` to view the homepage.
+2. Navigate to `catalog.html` to browse products.
+3. Use `custom_orders.html` to request a custom item.
+4. Visit `contact_me.html` to get in touch.
 
---IDEAS FOR FUTURE IMPROVEMENT--
-1. Implementing a function to automatically display the 3 best rated items in the TODAY'S FEATURED ITEMS section in Index.html.
-2. The Add to Cart button actually pushing items in the shopping cart. 
-(IN PROGRESS)
+## File Structure
+- `index.html` - Homepage
+- `catalog.html` - Product catalog
+- `custom_orders.html` - Custom order form
+- `contact_me.html` - Contact page
+- `styles.css` - Main stylesheet
+- `index.js` - JavaScript functionality
+- `assets/` - Images and icons
 
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request.
 
---USER STORIES--
-As a client, I want to see examples of work.
-As a client, I want to know what items are available.
-As a client, I want to know item cost.
-As a client, I want to purchase items directly from the website.
-As a client, I want to make a customized order.
+## License
 
-As a client, I want to communicate with the artist after placing an order
-As a client, I want to create an account to manage my orders.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
-As a client, I want to know who the artist is.
-As a client, I want to easily navigate the website.
-As a client, I want to find the artist on social media.
+## Contact
 
---WIREFRAMES & WIREFLOW--
-Desktop Mode
- https://drive.google.com/file/d/1CxiC2ayqqUobZ0Y_51Lf82Ec-_xbLE4b/view?usp=sharing
+For feedback or questions, please contact [lupiensimon@hotmail.com](mailto:lupiensimon@hotmail.com).
 
-Mobile Mode
- https://drive.google.com/file/d/1VJeATuKD4YkGXZDHdjzsJ5_dhsDMc-L9/view?usp=sharing
+- [GitHub Profile](https://github.com/SimonProgAI)
+- [LinkedIn](https://www.linkedin.com/in/simon-lupien-22594235a/)
 
